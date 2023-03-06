@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/35df8bbe47.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5278/5278402.png">
+    <title>AI Universe</title>
+</head>
+
+<body class="container">
+     <!-- Header Start -->
+     <header class="text-center">
+        <h2 class="display-6 p-2 fw-bold">AI Universe Hub</h2>
+        <div id="sortByDate" class="btn btn-danger">Sort by Date</div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <!-- Section 01 Start -->
+        <section class="container pt-3">
+            <div id="divContainer" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            </div>
+        </section>
+        <!-- Section 01 End -->
+
+        <!-- Section 02 Start -->
+        <section id="seeMoreBtn" class="container p-3 text-center d-none">
+            <button id="seeMore" class="btn btn-danger">See more</button>
+        </section>
+        <!-- Section 2 End -->
+
+        <!-- Section 03 Start Loading Spinner -->
+        <section id="loadingSpinnerSection">
+            <div class="text-center d-none" id="loading-spinner">
+                <img src="./img/loading-spinner.gif" alt="" srcset="">
+            </div>
+        </section>
+        <!-- Section 03 End -->
+
+        <!-- Section 04 Modal -->
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-body p-2 p-lg-5">
+                            <!-- Two's Columns -->
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <div class="card ">
+                                        <div class="card-body modal-card1">
+                                            <h5 class="card-title" id="leftCardTitle"></h5>
+                                            <!-- Pricing -->
+                                            <div id="pricing"
+                                                class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-2  mt-3">
+
+                                            </div>
+                                            <!--Feature and Integration  -->
+                                            <div id="featureItegration" class="row row-cols-1 row-cols-lg-2 g-2 mt-3">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-3" id="right-div">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Section 04 Modal End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <h6 class="text-center pt-4 pb-2">© 2023 Copyright:Sanad Bhowmik</h6>
+    </footer>
+    <!-- script -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
